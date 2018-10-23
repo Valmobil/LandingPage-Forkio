@@ -1,0 +1,10 @@
+1. open terminal window
+2. Run: npn init
+2. Run: npm isntall gulp --save-dev
+2. Run: npm audit fix --force
+npm install browser-sync --save-dev
+npm install node-sass gulp-sass --save-dev
+npm install --save-dev gulp-autoprefixer
+npm install --save-dev gulp-concat
+npm install gulp-clean-css --save-dev
+npm install --save-dev gulp-uglify
