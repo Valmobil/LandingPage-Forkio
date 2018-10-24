@@ -1,4 +1,4 @@
-let gulp = require('gulp'),
+let gulp = require('gulp');
     browserSync = require('browser-sync').create(),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -9,7 +9,7 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify');
 
 
-
+// tasks for HTML
 gulp.task('copy-html', () => {
     return gulp.src('./src/**/*.html')
         .pipe(gulp.dest('./dist/'));
@@ -22,42 +22,32 @@ gulp.task('sass',()=> {
         .pipe(sass())
         .pipe(gulp.dest('./src/css/'));
 });
-
+//
 gulp.task('autoprefix', gulp.series('sass'),() =>
     gulp.src('./src/css/**/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('./src/css'))
+        .pipe(gulp.dest('./src/css/'))
+);
+
+gulp.task('concat-css', gulp.series('autoprefix'), ()=>{
+    return gulp.src('./src/css/**/*.css')
+        .pipe(concatCss('style.css'))
+        .pipe(gulp.dest('./src/css/'));
 });
 
-// gulp.task('autoprefix', () =>
-//     gulp.src('./src/css/**/*.css')
-//         .pipe(autoprefixer({
-//             browsers: ['last 2 versions'],
-//             cascade: false
-//         }))
-//         .pipe(gulp.dest('./src/css1/'))
-// );
+gulp.task('minify-css', ()=>{
+    return gulp.src('./src/css/style.css')
+        .pipe(cleanCSS({compatibility: 'ie8'}))
+        .pipe(gulp.dest('./src/css/'));
+});
 
-
-// gulp.task('concat-css', ['autoprefix'], ()=>{
-//     return gulp.src('./src/css/**/*.css')
-//         .pipe(concat('style.css'))
-//         .pipe(gulp.dest('./src/css/'));
-// });
-
-// gulp.task('minify-css', ['concat-css'], ()=>{
-//     return gulp.src('./src/css/style.css')
-//         .pipe(cleanCSS({compatibility: 'ie8'}))
-//         .pipe(gulp.dest('./src/css/'));
-// });
-
-// gulp.task('copy-css', ['minify-css'], () => {
-//     return gulp.src('./src/css/style.css')
-//         .pipe(gulp.dest('./dist/css/'))
-// });
+gulp.task('copy-css', gulp.series('concat-css'), () => {
+    return gulp.src('./src/css/style.css')
+        .pipe(gulp.dest('./dist/css/'))
+});
 
 //tasks for JS files
 
@@ -66,6 +56,8 @@ gulp.task('concat-js', () => {
         .pipe(concat('script.js'))
         .pipe(gulp.dest('./src/js/'));
 });
+
+
 
 // gulp.task('minify-js', ['concat-js'], (cb) => {
 //     pump([
