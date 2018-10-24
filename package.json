@@ -6,9 +6,10 @@
   "devDependencies": {
     "browser-sync": "latest",
     "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-concat": "latest",
+    "gulp-concat-css": "^3.1.0",
     "gulp-sass": "latest",
     "gulp-uglify": "latest",
     "node-sass": "latest"
