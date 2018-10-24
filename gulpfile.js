@@ -13,8 +13,8 @@ gulp.task('copy-html',()=>{
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('copy-dist',()=>{
-    return gulp.src('./dist/, {read: false})
+gulp.task('clear-dist',()=>{
+    return gulp.src('./dist/', {read: false})
         .pipe(clean());
 });
 
