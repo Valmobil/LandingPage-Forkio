@@ -1,0 +1,31 @@
+.about-us__content{
+  background-image: url("../img/about-us.jpg");
+  height: 800px;
+  background-size: contain;
+  margin-top: -100px;
+}
+
+.about-us__title{
+  color:  #ffffff;
+  font-size: 82px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+}
+
+.about-us__slogan{
+  font-family: 'Lato', sans-serif;
+  color:  #8d81ac;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
+
+.about-us__small-info{
+  color:  #848e97;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: center;
+}
