@@ -6,20 +6,23 @@ let gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     pump = require('pump'),
     uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
     clean = require('gulp-clean');
 
-gulp.task('copy-html',()=>{
+gulp.task('copy-html', () => {
     return gulp.src('./src/**/*.html')
         .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('clean-dist',()=>{
+gulp.task('copy-plugins',()=>{
+    return gulp.src('./src/plugins/**/*')
+        .pipe(gulp.dest('./dist/plugins/'));
+});
+
+
+gulp.task('clean-dist', () => {
     return gulp.src('./dist/', {read: false})
         .pipe(clean());
 });
-
-gulp.task("minify-img")
 
 // tasks for CSS files
 
@@ -88,7 +91,16 @@ gulp.task('copy-js',['minify-js'], () => {
         .pipe(gulp.dest('./dist/js/'))
 });
 
-gulp.task('serve',['copy-html','copy-css','copy-js'], ()=> {
+// tasks for images
+
+gulp.task('minify-img',()=>{
+    return gulp.src('./src/img/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/img/'))
+})
+
+
+gulp.task('serve', ['copy-html','copy-css','copy-js','minify-img'], () => {
     browserSync.init({
         server: {
             baseDir: "./dist"
@@ -108,4 +120,5 @@ gulp.task('build', ['clean-dist'],()=>{
     gulp.start('copy-html');
     gulp.start('copy-css');
     gulp.start('copy-js');
+    gulp.start('minify-img');
 });
