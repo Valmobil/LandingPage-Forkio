@@ -1,0 +1,24 @@
+Responcibility:
+
+Oleg - #1
+1. Common HTML and CSS structure
+2. Сверстать шапку сайта с верхним меню.
+3. Сверстать блок `Revolutionary Editor`
+
+Валера - #2
+ - Gulp
+ - Светстать секцию `Here is what you get`.
+ - Настроить Git для Code Review
+ - Светстать карусель.
+
+ Andrey - #3
+  - Сверстать секцию `People Are Talking About Fork`.
+  - Сверстать секцию `Fork Subscription Pricing`.
+
+
+  Не распределенные задачи:
+  - Cекция `Subscribe To Our Newsletter`
+  - Футер
+  - Разместить проект в интернете с помощью [Github pages]
+  - Настроить обработку ошибок
+  - Сделать аналогичную сборку также на [Webpack]
