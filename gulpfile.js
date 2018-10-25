@@ -96,7 +96,7 @@ gulp.task('copy-js',['minify-js'], () => {
 // tasks for img
 
 gulp.task('minify-img',()=>{
-    return gulp.src('./src/img/*')
+    return gulp.src('./src/img/**/*')
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/img/'))
 })
@@ -112,6 +112,7 @@ gulp.task('serve', ['copy-html','copy-css','copy-js','minify-img'], () => {
     gulp.watch('./src/**/*.html', ['copy-html']).on('change', browserSync.reload);
     gulp.watch('./src/scss/**/*.scss', ['copy-css']).on('change', browserSync.reload);
     gulp.watch('./src/js/**/*.js', ['copy-js']).on('change', browserSync.reload);
+    gulp.watch('./src/img/**/*', ['minify-img']).on('change', browserSync.reload);
 });
 
 gulp.task('dev',['clean-dist'],()=>{

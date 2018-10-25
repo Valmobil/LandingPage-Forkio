@@ -1,14 +1,19 @@
-.navbar{
-  width: 100%;
-  height: 100px;
-  color: green;
-  font-size: 50px;
-}
-.section-title-two__heading {
-  font-family: Montserrat;
-  color: #8d81ac;
-  font-size: 47.99px; /* Приближение из-за подстановки шрифтов */
-  font-weight: 700;
-  line-height: 15px; /* Приближение из-за подстановки шрифтов */
-  text-align: left;
+.features {
+
+  .section-title-two__heading {
+    color: #8d81ac;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  .feature-item__title {
+    color: #323232;
+    font-size: 16px;
+    line-height: 15.406px;
+  }
+  .feature-item__desc {
+    color: #848e97;
+    font-size: 14px;
+    line-height: 15.406px;
+  }
 }
