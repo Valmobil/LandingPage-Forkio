@@ -93,14 +93,14 @@ gulp.task('copy-js',['minify-js'], () => {
 
 // tasks for images
 
-gulp.task('minify-img',()=>{
-    return gulp.src('./src/img/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/img/'))
-})
+// gulp.task('minify-img',()=>{
+//     return gulp.src('./src/images/*')
+//         .pipe(imagemin())
+//         .pipe(gulp.dest('./dist/images/'))
+// })
 
 
-gulp.task('serve', ['copy-html','copy-css','copy-js','minify-img'], () => {
+gulp.task('serve', ['copy-html','copy-css','copy-js'], () => {
     browserSync.init({
         server: {
             baseDir: "./dist"
