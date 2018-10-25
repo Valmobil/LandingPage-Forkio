@@ -6,7 +6,9 @@ let gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     pump = require('pump'),
     uglify = require('gulp-uglify'),
+    imagemin = require('gulp-imagemin'),
     clean = require('gulp-clean');
+
 
 gulp.task('copy-html', () => {
     return gulp.src('./src/**/*.html')
@@ -91,7 +93,7 @@ gulp.task('copy-js',['minify-js'], () => {
         .pipe(gulp.dest('./dist/js/'))
 });
 
-// tasks for images
+// tasks for img
 
 gulp.task('minify-img',()=>{
     return gulp.src('./src/img/*')
