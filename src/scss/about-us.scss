@@ -1,11 +1,20 @@
-.about-us__content{
-  background-image: url("../img/about-us.jpg");
+.about-us{
+  width: 100%;
+  background: url("../img/about-us.jpg")no-repeat;
   height: 800px;
-  background-size: contain;
+  background-size: 100%;
   margin-top: -100px;
-  box-sizing: border-box;
+
+}
+
+.about-us__content{
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+
 }
 
 .about-us__title{
