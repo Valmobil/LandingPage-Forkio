@@ -13,4 +13,10 @@
 12. npm install --save-dev gulp-clean
 13. npm install --save-dev gulp-imagemin
 
+
 Запуск gulp serve
+
+Перед работой:
+1. Commit
+2. Pull proekt
+3. Push
