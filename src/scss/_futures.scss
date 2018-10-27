@@ -10,7 +10,7 @@
     .section-title-two {
       width: 45%;
       padding-left: 5%;
-      .section-title-two__heading {
+      &__heading {
         color: #8d81ac;
         font-size: 2.3em;
         font-weight: 700;
@@ -27,11 +27,11 @@
         display: flex;
         padding-top: 20px;
 
-        .feature-item__icon-block {
+        &__icon-block {
           float: left;
           width: 20em;
 
-          .feature-item__img {
+          &__img {
             display: block;
             margin: 0 auto;
           }
