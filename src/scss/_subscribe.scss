@@ -28,7 +28,7 @@
   border-radius: 25px;
   border: none;
   line-height: 17px;
-  width: 335px;
+  width: 330px;
   height: 42px;
   margin-right: 11px;
   padding-left: 26px;
@@ -45,15 +45,14 @@
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
+  text-decoration: none;
 
 }
 
 .btn_subscribe:hover {
   background-color: #fff;
   color: #8d81ac;
-  border: 3px red;
-  //background-image: url("../img/border-button.png");
-  position: relative;
+  border: 1px solid #8d81ac;
 
 }
 
