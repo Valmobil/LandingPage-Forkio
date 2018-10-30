@@ -36,10 +36,10 @@ gulp.task('clean-css', () => {
 gulp.task('sass', ['clean-css'], () => {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(sass())
-        .on('error', function (err) {
-            console.log(err.toString());
-            this.emit('end');
-        })
+        // .on('error', function (err) {
+        //     console.log(err.toString());
+        //     this.emit('end');
+        // })
         .pipe(gulp.dest('./src/css/'));
 });
 
@@ -73,10 +73,10 @@ gulp.task('copy-css', ['minify-css'], () => {
 
 gulp.task('clean-js', () => {
     return gulp.src('./src/js/script.js', {read: false})
-        .on('error', function (err) {
-            console.log(err.toString());
-            this.emit('end');
-        })
+        // .on('error', function (err) {
+        //     console.log(err.toString());
+        //     this.emit('end');
+        // })
         .pipe(clean());
 });
 
