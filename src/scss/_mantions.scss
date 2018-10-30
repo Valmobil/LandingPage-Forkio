@@ -1,0 +1,36 @@
+.section-title-three{
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 38px;
+  padding: 40px;
+}
+.mentions {
+  //width: 100%;
+  background: url("../img/peaple_are/Layer_1.png") no-repeat center;
+  background-size: cover;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+.mentions ul{
+  margin-top: 40px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.mentions-list li{
+  float: left;
+}
+.mentions-item__text{
+  color: white;
+}
+.mentions__small-info{
+  color: #8d81ac;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 38px;
+  padding: 40px;
+}

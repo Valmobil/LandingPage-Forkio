@@ -14,7 +14,7 @@
 13. npm install --save-dev gulp-imagemin
 
 
-Запуск gulp serve
+Запуск gulp serve..
 
 Перед работой:
 1. VCS - Commit
