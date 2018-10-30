@@ -1,0 +1,123 @@
+.carousel-item {
+  text-align: center;
+  padding-top: 6.8rem;
+  .carousel-item__author {
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  &__name {
+    color: #635c73;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.333;
+  }
+  &__nick {
+    color: #8d81ac;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 2;
+  }
+  &__comment {
+    width: 61%;
+    padding-top: 45px;
+    font-family: Lato;
+    color: #333333;
+    font-size: 1.25em;
+    line-height: 1.6;
+    margin: 0 auto;
+    &_violet {
+      font-family: Lato;
+      color: #8d81ac;
+      font-size: 1.25em;
+    }
+  }
+  &__time-post {
+    padding-top: 24px;
+    color: #848e97;
+    font-size: 1em;
+    padding-bottom: 7.4rem;
+  }
+
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.social-btn {
+  width: 240px;
+  height: 50px;
+  display: block;
+  margin: 0 20px;
+  font-size: 1.313em;
+  line-height: 2.524;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.social-btn_github {
+  background-color: #f3f3f3;
+  color: black;
+}
+
+.social-btn_twitter {
+  background-color: #21a7d2;
+
+}
+
+.social-btn_facebook {
+  background-color: #385899;
+}
+
+.social-item__followers {
+  color: #848e97;
+  font-size: 0.875em;
+  line-height: 2.286;
+  text-align: center;
+}
+
+
+.fa {
+  font-size: 1.8em;
+  color: #333333;
+}
+
+.fa-angle-left {
+   position: absolute;
+   top: 250px;
+   left: 10%;
+   z-index: 1;
+ }
+
+.fa-angle-right {
+  position: absolute;
+  top: 245px;
+  left: 90%;
+  z-index: 1;
+}
