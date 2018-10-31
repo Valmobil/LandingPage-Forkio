@@ -6,8 +6,10 @@
 }
 
 .footer__logo{
-  display: block;
+  display: flex;
   flex-direction: row;
+  align-items: center;
+  text-decoration: none;
 }
 
 //.footer_logo-img{
@@ -29,6 +31,7 @@
 .logo__text_dark{
   color:  #333333;
 }
+
 
 .site-description__text{
   color:  #848e97;
