@@ -87,7 +87,14 @@
 }
 
 //MEDIA
-@media (min-width: 481px) and (max-width: 992px) {
+@media (max-width: 992px) {
+  .section-title__heading{
+    font-size: 2.63rem;
+  }
+
+}
+
+@media (max-width: 480px) {
   .section-title__heading{
     font-size: 2.63rem;
   }

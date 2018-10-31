@@ -99,3 +99,24 @@
 
   }
 }
+
+@media (min-width: 401px) and (max-width: 480px) {
+  //.about-us {
+  //  background-size: contain;
+  //}
+  .about-us__title {
+    font-size: 3.38rem;
+  }
+  .about-us__slogan {
+    font-size: 1.25rem;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .about-us__small-info {
+    font-size: 1rem;
+  }
+  .b-download-btn{
+    margin-top: 35vw;
+
+  }
+}
