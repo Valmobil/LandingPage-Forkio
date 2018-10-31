@@ -14,9 +14,9 @@
 13. npm install --save-dev gulp-imagemin
 
 
-Запуск gulp serve
+Запуск gulp serve..
 
 Перед работой:
-1. Commit
-2. Pull proekt
-3. Push
+1. VCS - Commit
+2. VCS - Git - Pull proekt
+3. VCS - Git - Push

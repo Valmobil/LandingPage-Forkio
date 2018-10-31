@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,700,700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    Slick carousel - CSS
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/style.css">
-    <!--<link rel="stylesheet" href="scss/people.scss">-->
+    <!--<link rel="stylesheet" href="scss/_pricing.scss">-->
 </head>
 <body>
 
@@ -124,7 +127,7 @@
 
 <!--<section class="section-features">-->
 <section class="features">
-    <div class="container">
+    <div class="container features-container">
         <!--<div class="features">-->
         <div class="section-title-two">
             <h2 class="section-title-two__heading"> &lt;Here is what you get&gt; </h2>
@@ -137,43 +140,45 @@
         </div>
         <div class="features-list">
             <div class="feature-item">
-                <div class="feature-item__icon-block">
-                    <img class="feature-item__img" src="/img/features/hereis-icon-1.png">
+                <div class="feature-item-icon-block">
+                    <img class="feature-item-icon-block__img" src="/img/features/hereis-icon-1.png">
                 </div>
-                <div class="feature-item__about-block">
-                    <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
-                    <p class="feature-item__desc">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui
+                <div class="feature-item-about-block">
+                    <h3 class="feature-item-about-block__title">Creatred to Make The Web Better</h3>
+                    <p class="feature-item-about-block__desc">Aenean cursus imperdiet nisl id fermentum. Aliquam
+                        pharetra dui
                         laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-item__icon-block">
-                    <img class="feature-item__img" src="/img/features/hereis-icon-2.png">
+                <div class="feature-item-icon-block">
+                    <img class="feature-item-icon-block__img" src="/img/features/hereis-icon-2.png">
                 </div>
-                <div class="feature-item__about-block">
-                    <h3 class="feature-item__title">Incredibly Powerful Tool</h3>
-                    <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                <div class="feature-item-about-block">
+                    <h3 class="feature-item-about-block__title">Incredibly Powerful Tool</h3>
+                    <p class="feature-item-about-block__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
                         feli.Maecenas eu dictum felis, a dignissim nibh. Aenean cursus imperdiet nisl id fermentum.</p>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-item__icon-block">
-                    <img class="feature-item__img" src="/img/features/hereis-icon-3.png">
+                <div class="feature-item-icon-block">
+                    <img class="feature-item-icon-block__img" src="/img/features/hereis-icon-3.png">
                 </div>
-                <div class="feature-item__about-block">
-                    <h3 class="feature-item__title">Experimental Stuff</h3>
-                    <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus feli.
+                <div class="feature-item-about-block">
+                    <h3 class="feature-item-about-block__title">Experimental Stuff</h3>
+                    <p class="feature-item-about-block__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                        feli.
                         Maecenas eu dictum felis, a dignissim nibh. Aenean cursus imperdiet nisl id fermentum.
                     </p>
                 </div>
             </div>
             <div class="feature-item">
-                <div class="feature-item__icon-block">
-                    <img class="feature-item__img" src="/img/features/hereis-icon-4.png">
+                <div class="feature-item-icon-block">
+                    <img class="feature-item-icon-block__img" src="/img/features/hereis-icon-4.png">
                 </div>
-                <div class="feature-item__about-block">
-                    <h3 class="feature-item__title">Creatred to Make The Web Better</h3>
-                    <p class="feature-item__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
+                <div class="feature-item-about-block">
+                    <h3 class="feature-item-about-block__title">Creatred to Make The Web Better</h3>
+                    <p class="feature-item-about-block__desc">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus
                         feli.Maecenas eu dictum felis, a dignissim nibh. Aenean cursus imperdiet nisl id fermentum.</p>
                 </div>
             </div>
@@ -186,14 +191,20 @@
 </section>
 
 <section class="section-carousel">
-    <div class="container">
+    <div class="container container-carousel">
         <div class="carousel">
             <div class="carousel__list">
+
                 <div class="carousel-item">
                     <div class="carousel-item__author">
-                        <div class="carousel-item__img"></div>
-                        <p class="carousel-item__name">Steven Strange</p>
-                        <p class="carousel-item__nick">@DoctorS</p>
+                        <div class="carousel-item__img">
+                            <img src="/img/carousel/Steven Strange.jpg">
+                        </div>
+                        <div class="carousel-item__text">
+                            <p class="carousel-item__name">Steven Strange</p>
+                            <p class="carousel-item__nick">@DoctorS</p>
+                        </div>
+
                     </div>
                     <p class="carousel-item__comment">
                         <span class="carousel-item__comment_violet">@Pixelbuddha</span>
@@ -201,6 +212,23 @@
                         scelerisque felis. Suspendisse sodales sem est, in scelerisque felis. Suspendisse sodales sem
                         est, in scelerisque felis.</p>
                     <p class="carousel-item__time-post">2 hours ago</p>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-item__author">
+                        <div class="carousel-item__img">
+                            <img src="/img/carousel/Mark Tsukenberg.jpg">
+                        </div>
+                        <div class="carousel-item__text">
+                            <p class="carousel-item__name">Mark Tsukenberg</p>
+                            <p class="carousel-item__nick">@CEO</p>
+                        </div>
+                    </div>
+                    <p class="carousel-item__comment">
+                        <span class="carousel-item__comment_violet">@FaceControl</span>
+                        Dolor sit amet, consectetur adipisicing elit. Ad asperiores corporis debitis delectus ea esse
+                        explicabo facilis inventore itaque laudantium.
+                    </p>
+                    <p class="carousel-item__time-post">5 min ago</p>
                 </div>
             </div>
 
@@ -218,7 +246,6 @@
                     <p class="social-item__followers">218 092 Followers</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -230,20 +257,20 @@
 
     <ul class="mentions-list">
         <li class="mentions-item">
-            <img src="dist/img/companies-logo/smashing-magazine.png" alt="smashing magazine logo"
+            <img src="../img/peaple_are/logo1.png" alt="smashing magazine logo"
                  class="mentions-item__img">
             <p class="mentions-item__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id
                 dignissim magna. Sed varius urna et pulvinar venenatis.
             </p>
         </li>
         <li class="mentions-item">
-            <img src="dist/img/companies-logo/codrops.png" alt="codrops logo" class="mentions-item__img">
+            <img src="../img/peaple_are/logo2.png" alt="codrops logo" class="mentions-item__img">
             <p class="mentions-item__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus
                 molestie neque ac, mollis eleifend nibh.
             </p>
         </li>
         <li class="mentions-item">
-            <img src="dist/img/companies-logo/w-company.png" alt="w-company logo" class="mentions-item__img">
+            <img src="../img/peaple_are/logo3.png" alt="w-company logo" class="mentions-item__img">
             <p class="mentions-item__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat
                 fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.
             </p>
@@ -251,8 +278,7 @@
 
         <li class="mentions-item">
             <div class="mentions-item__img">
-                <img src="dist/img/companies-logo/pixel-budha-img.png" alt="pixel budha logo">
-                <img src="dist/img/companies-logo/pixel-budha-text.png" alt="pixel budha logo">
+                <img src="../img/peaple_are/logo4.png" alt="pixel budha logo">
             </div>
             <p class="mentions-item__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat
                 fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.
@@ -260,14 +286,14 @@
         </li>
 
         <li class="mentions-item">
-            <img src="dist/img/companies-logo/creative-bloq.png" alt="creative bloq logo" class="mentions-item__img">
+            <img src="../img/peaple_are/logo5.png" alt="creative bloq logo" class="mentions-item__img">
             <p class="mentions-item__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla
                 faucibus lorem id arcu consequat faucibus.
             </p>
         </li>
 
         <li class="mentions-item">
-            <img src="dist/img/companies-logo/tnw.png" alt="tnw logo" class="mentions-item__img">
+            <img src="../img/peaple_are/logo6.png" alt="tnw logo" class="mentions-item__img">
             <p class="mentions-item__text">Fusce pharetra erat id odio blandit, nec pharetra eros venenatis.
                 Pellentesque porttitor cursus massa et vestibulum.
             </p>
@@ -292,7 +318,9 @@
                     <p class="price-plan__price"><span class="pricing-block__currency">&#36;</span>29</p>
                     <p class="price-plan__small-info">per month</p>
                     <p class="price-plan__description">Personal License</p>
-                    <a href="#" class="price-plan__buy-btn">purchase</a>
+                </div>
+                <div class="price-plan__buy-btn-for">
+                <a href="#" class="price-plan__buy-btn">purchase</a>
                 </div>
             </li>
             <li class="price-plan">
@@ -302,7 +330,9 @@
                     <p class="price-plan__small-info">per month</p>
                     <p class="price-plan__description">Personal License</p>
                     <p class="price-plan__description">Email Support</p>
-                    <a href="#" class="price-plan__buy-btn">purchase</a>
+                </div>
+                <div class="price-plan__buy-btn-for">
+                <a href="#" class="price-plan__buy-btn">purchase</a>
                 </div>
             </li>
             <li class="price-plan price-plan_active">
@@ -313,6 +343,8 @@
                     <p class="price-plan__small-info">per month</p>
                     <p class="price-plan__description">1-12 Team Members</p>
                     <p class="price-plan__description">Phone Support</p>
+                </div>
+                <div class="price-plan__buy-btn-for">
                     <a href="#" class="price-plan__buy-btn pricing-block__link_active">purchase</a>
                 </div>
             </li>
@@ -323,7 +355,9 @@
                     <p class="price-plan__small-info">per month</p>
                     <p class="price-plan__description">Unlimited Team Members</p>
                     <p class="price-plan__description">24/7 Phone Support</p>
-                    <a href="#" class="price-plan__buy-btn">purchase</a>
+                </div>
+                <div class="price-plan__buy-btn-for">
+                <a href="#" class="price-plan__buy-btn">purchase</a>
                 </div>
             </li>
         </ul>
@@ -391,7 +425,8 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="dist/js/script.js"></script>
-
+<script src="/js/script.js"></script>
+Slick carousel - JS
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>
