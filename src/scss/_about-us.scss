@@ -23,7 +23,7 @@
 
 .about-us__title {
   color: #ffffff;
-  font-size: 82px;
+  font-size: 5.13rem;
   font-weight: 700;
   margin-top: 135px;
   text-align: center;
@@ -33,7 +33,7 @@
 .about-us__slogan {
   font-family: 'Lato', sans-serif;
   color: #8d81ac;
-  font-size: 30px;
+  font-size: 1.88rem;
   font-weight: 400;
   line-height: 15px;
   text-align: center;
@@ -42,16 +42,15 @@
 
 .about-us__small-info {
   color: #848e97;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 15px;
   text-align: center;
+  //position: absolute;
 }
 
 .b-download-btn {
   margin-top: 35vw;
-  //margin-left: auto;
-  //margin-right: auto;
   margin-right: auto;
   margin-left: auto;
   transform: translateY(24px);
@@ -76,4 +75,27 @@
   font-weight: 400;
   //line-height: 15px;
   text-align: center;
+  transform: translateY(40px);
+}
+
+//MEDIA
+@media (min-width: 481px) and (max-width: 992px) {
+  //.about-us {
+  //  background-size: contain;
+  //}
+  .about-us__title {
+    font-size: 4.5rem;
+  }
+  .about-us__slogan {
+    font-size: 1.5rem;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .about-us__small-info {
+    font-size: 0.88rem;
+  }
+  .b-download-btn{
+    margin-top: 35vw;
+
+  }
 }
