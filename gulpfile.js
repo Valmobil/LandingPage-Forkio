@@ -36,10 +36,10 @@ gulp.task('clean-css', () => {
 gulp.task('sass', ['clean-css'], () => {
     return gulp.src('./src/scss/**/*.scss')
         .pipe(sass())
-        // .on('error', function (err) {
-        //     console.log(err.toString());
-        //     this.emit('end');
-        // })
+        .on('error', function (err) {
+            console.log(err.toString());
+            this.emit('end');
+        })
         .pipe(gulp.dest('./src/css/'));
 });
 

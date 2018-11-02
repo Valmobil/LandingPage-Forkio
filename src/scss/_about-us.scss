@@ -4,7 +4,6 @@
   background-size: cover;
   //background-size: 100%;
   margin-top: -100px;
-  border: 1px solid red;
   box-sizing: border-box;
   //height: 800px;
   //background-color: green;
@@ -58,7 +57,7 @@
 
 .btn_download {
   border-radius: 36px;
-  padding: 23px 63px;
+  padding: 1.44rem 3.94rem;
   text-decoration: none;
   color: #ffffff;
   font-size: 21.01px;
@@ -71,7 +70,7 @@
   //margin-top: 19px;
   //margin-left: -390px;
   color: #848e97;
-  font-size: 14px;
+  font-size: 0.88rem;
   font-weight: 400;
   //line-height: 15px;
   text-align: center;
@@ -80,16 +79,18 @@
 
 //MEDIA
 @media (min-width: 481px) and (max-width: 992px) {
-  //.about-us {
-  //  background-size: contain;
-  //}
+  .about-us__content {
+    padding-bottom: 180px;
+  }
   .about-us__title {
     font-size: 4.5rem;
+    margin-top: 140px;
   }
   .about-us__slogan {
     font-size: 1.5rem;
     flex-wrap: nowrap;
     width: 100%;
+    line-height: 30px;
   }
   .about-us__small-info {
     font-size: 0.88rem;
@@ -118,5 +119,22 @@
   .b-download-btn{
     margin-top: 35vw;
 
+  }
+}
+
+@media (max-width: 400px) {
+  .about-us__title {
+    font-size: 3rem;
+  }
+  .about-us__slogan {
+    font-size: 1.13rem;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .about-us__small-info {
+    font-size: 0.88rem;
+  }
+  .btn_download{
+    font-size: 1.13rem;
   }
 }
