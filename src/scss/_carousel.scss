@@ -42,13 +42,13 @@
   &__comment {
     width: 61%;
     padding-top: 45px;
-    font-family: Lato;
+    font-family: Lato sans-serif;
     color: #333333;
     font-size: 1.25em;
     line-height: 1.6;
     margin: 0 auto;
     &_violet {
-      font-family: Lato;
+      font-family: Lato sans-serif;
       color: #8d81ac;
       font-size: 1.25em;
     }
@@ -78,20 +78,51 @@
   text-align: center;
   text-decoration: none;
   color: white;
+  border-radius: 4px;
+  background-color: #2b414d;
 }
 
 .social-btn_github {
-  background-color: #f3f3f3;
   color: black;
+  background: url("../img/carousel/icon-git.png") no-repeat #f3f3f3;
+  background-position: 19px 17px;
+  background-size: 15px auto;
+  border: #f3f3f3 solid 1px;
+}
+
+.social-btn_github:hover {
+  background: url("../img/carousel/icon-git-colour.png") no-repeat #2b414d;;
+  background-position: 19px 17px;
+  background-size: 15px auto;
+  color: white;
 }
 
 .social-btn_twitter {
-  background-color: #21a7d2;
+  background: url("../img/carousel/icon-twitter.png") no-repeat #21a7d2;
+  background-position: 19px 17px;
+  background-size: 17px auto;
+  border: #21a7d2 solid 1px;
+}
 
+.social-btn_twitter:hover {
+  background: url("../img/carousel/icon-twitter-colour.png") no-repeat white;
+  background-position: 19px 17px;
+  background-size: 17px auto;
+  color: #21a7d2;
 }
 
 .social-btn_facebook {
-  background-color: #385899;
+  background: url("../img/carousel/icon-facebook.png") no-repeat #385899;
+  background-position: 19px 17px;
+  background-size: 9px auto;
+  border: #385899 solid 1px;
+}
+
+.social-btn_facebook:hover {
+  background: url("../img/carousel/icon-facebook-colour.png") no-repeat white;
+  background-position: 19px 17px;
+  background-size: 9px auto;
+  color: #385899;
 }
 
 .social-item__followers {
@@ -108,11 +139,11 @@
 }
 
 .fa-angle-left {
-   position: absolute;
-   top: 250px;
-   left: 10%;
-   z-index: 1;
- }
+  position: absolute;
+  top: 250px;
+  left: 10%;
+  z-index: 1;
+}
 
 .fa-angle-right {
   position: absolute;
@@ -120,47 +151,4 @@
   left: 90%;
   z-index: 1;
 
-}
-
-//MEDIA
-@media (max-width: 992px) {
-  .carousel-item {
-
-    &__comment {
-      width: 77%;
-    }
-
-    &__time-post {
-      padding-top: 24px;
-      color: #848e97;
-      font-size: 1em;
-      padding-bottom: 4.4rem;
-    }
-  }
-  .fa-angle-left {
-    left: 5%;
-  }
-  .fa-angle-right {
-    left: 95%;
-  }
-  .social-links {
-    flex-wrap: wrap;
-  }
-}
-
-.carousel-item__comment {
-  font-size: 1 rem;
-}
-
-@media (max-width: 480px) {
-
-  .carousel-item__comment {
-    font-size: 1em;
-  }
-  .fa-angle-left {
-    top: 272px;
-  }
-  .fa-angle-right {
-    top: 272px;
-  }
 }
