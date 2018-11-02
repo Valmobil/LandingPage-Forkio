@@ -10,7 +10,6 @@
   }
 
   &__img {
-
     width: 85px;
     height: 85px;
     border-radius: 50%;
@@ -100,6 +99,7 @@
   font-size: 0.875em;
   line-height: 2.286;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 
@@ -120,4 +120,33 @@
   top: 245px;
   left: 90%;
   z-index: 1;
+}
+
+//MEDIA
+@media (max-width: 992px) {
+  .carousel-item {
+
+    &__comment {
+      width: 82%;
+    }
+
+    &__time-post {
+      padding-top: 24px;
+      color: #848e97;
+      font-size: 1em;
+      padding-bottom: 4.4rem;
+    }
+  }
+
+  .fa-angle-left {
+    left: 5%;
+  }
+
+  .fa-angle-right {
+    left: 95%;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+  }
 }

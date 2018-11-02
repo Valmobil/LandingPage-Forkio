@@ -1,6 +1,6 @@
-console.log("I am here")
+// console.log("I am here")
 $(document).ready(function(){
-    console.log("in carousel")
+    // console.log("in carousel")
     $('.carousel__list').slick({
         dots: false,
         infinite: true,

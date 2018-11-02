@@ -1,38 +1,41 @@
 .features-container {
+  height: 34rem;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: flex-end;
   background-color: #f4f4f4;
-  padding-top: 3rem;
+  padding-top: 4.5rem;
   padding-left: 3rem;
   padding-bottom: 2rem;
-  .section-title-two {
-    width: 45%;
-    padding-left: 5%;
-    &__heading {
-      color: #8d81ac;
-      font-size: 2.3rem;
-      font-weight: 700;
-      padding-left: 0.5rem;
-    }
-
-  }
 }
 
-.feature-item__img-screen {
-  width: 100%
+.section-title-two__heading {
+  width: 51.5%;
+  padding-left: 1%;
+  color: #8d81ac;
+  font-size: 2.5rem;
+  font-weight: 700;
+  order: 2;
+}
+
+.feature-item-screen {
+  padding-top: 20px;
+  width: 53%;
+  order: 3;
+  &__img {
+    width: 100%
+  }
 }
 
 .features-list {
   width: 45%;
-  padding-right: 5%;
+  order: 1;
 
   .feature-item {
     display: flex;
-    padding-top: 20px;
 
     &-icon-block {
-      //float: left;
       width: 350px;
       &__img {
         display: block;
@@ -40,17 +43,62 @@
       }
     }
     &-about-block {
+      padding-bottom: 50px;
       &__title {
         color: #323232;
         font-size: 16px;
         font-weight: 500;
-        padding-bottom: 0.75rem
+        padding-bottom: 0.7rem
       }
       &__desc {
         color: #848e97;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 17px;
       }
     }
   }
+}
+
+//MEDIA
+@media (max-width: 992px) {
+  .features-container {
+    padding-top: 2.5rem;
+    align-items: flex-start;
+    height: 1259px;
+  }
+
+  .feature-item-screen {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .features-container {
+    flex-wrap: nowrap;
+    padding-left: 0;
+  }
+
+  .features-list .feature-item-about-block {
+    padding-bottom: 64px;
+  }
+
+  .section-title-two__heading {
+    width: 80%;
+    order: 1;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .section-title-two {
+    padding-left: 5%;
+    width: 90%;
+  }
+
+  .features-list {
+    width: 90%;
+    //order:/ 2;
+  }
+}
+
+@media (max-width: 480px) {
+
 }
