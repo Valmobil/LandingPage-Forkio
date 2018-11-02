@@ -11,10 +11,33 @@
   align-items: center;
   text-decoration: none;
 }
+.logo__hover{
+  display: none;
+}
 
-//.footer_logo-img{
-//  float: left;
+.footer__logo:hover .logo__hover {
+  display: block;
+}
+
+.footer__logo:hover .logo__img {
+  display: none;
+}
+
+//.footer__logo:hover {
+//  line-height: 100%;
 //}
+.footer__logo:hover .logo__text_dark {
+  color: #8d81ac;
+  //padding-bottom: 2px;
+}
+.footer__logo:hover .logo__text_size-s {
+  color: #333333;
+  line-height: inherit;
+  //padding-top: 2px;
+  //padding-bottom: 5px;
+  //margin-bottom: 2px;
+}
+
 
 .site-description{
   width: 301px;
@@ -62,6 +85,9 @@
   font-weight: 400;
   line-height: 23px;
   text-decoration: none;
+}
+.vertical-nav__link:hover{
+  text-decoration: underline;
 }
 
 .site-contacts{

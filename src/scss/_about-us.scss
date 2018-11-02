@@ -79,16 +79,18 @@
 
 //MEDIA
 @media (min-width: 481px) and (max-width: 992px) {
-  //.about-us {
-  //  background-size: contain;
-  //}
+  .about-us__content {
+    padding-bottom: 180px;
+  }
   .about-us__title {
     font-size: 4.5rem;
+    margin-top: 140px;
   }
   .about-us__slogan {
     font-size: 1.5rem;
     flex-wrap: nowrap;
     width: 100%;
+    line-height: 30px;
   }
   .about-us__small-info {
     font-size: 0.88rem;

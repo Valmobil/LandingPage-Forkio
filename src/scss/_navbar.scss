@@ -27,7 +27,7 @@
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    width: 12.8%;
+    //width: 12.8%;
     .logo__logo-img {
       //display: flex;
       //align-items: center;
@@ -182,6 +182,7 @@
     margin-right: 0;
     //margin-left: auto;
     justify-content: center;
+    max-width: 96vw;
 
   }
 
@@ -338,6 +339,8 @@
     min-width: 320px;
     justify-content: space-between;
   }
+
+
 
   .header__btn {
     font-size: 0.93rem;
