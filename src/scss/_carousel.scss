@@ -102,10 +102,9 @@
   padding-bottom: 3rem;
 }
 
-
 .fa {
-  font-size: 1.8em;
-  color: #333333;
+  font-size: 1.3em;
+  color: #a2a2a2;
 }
 
 .fa-angle-left {
@@ -120,6 +119,7 @@
   top: 245px;
   left: 90%;
   z-index: 1;
+
 }
 
 //MEDIA
@@ -127,7 +127,7 @@
   .carousel-item {
 
     &__comment {
-      width: 82%;
+      width: 77%;
     }
 
     &__time-post {
@@ -137,16 +137,30 @@
       padding-bottom: 4.4rem;
     }
   }
-
   .fa-angle-left {
     left: 5%;
   }
-
   .fa-angle-right {
     left: 95%;
   }
-
   .social-links {
     flex-wrap: wrap;
+  }
+}
+
+.carousel-item__comment {
+  font-size: 1 rem;
+}
+
+@media (max-width: 480px) {
+
+  .carousel-item__comment {
+    font-size: 1em;
+  }
+  .fa-angle-left {
+    top: 272px;
+  }
+  .fa-angle-right {
+    top: 272px;
   }
 }
