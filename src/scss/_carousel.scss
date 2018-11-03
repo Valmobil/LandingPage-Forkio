@@ -80,51 +80,50 @@
   color: white;
   border-radius: 4px;
   background-color: #2b414d;
-}
 
-.social-btn_github {
-  color: black;
-  background: url("../img/carousel/icon-git.png") no-repeat #f3f3f3;
-  background-position: 19px 17px;
-  background-size: 15px auto;
-  border: #f3f3f3 solid 1px;
-}
+  &_github {
+    color: black;
+    background: url("../img/carousel/icon-git.png") no-repeat #f3f3f3;
+    background-position: 19px 17px;
+    background-size: 15px auto;
+    border: #f3f3f3 solid 1px;
+  }
 
-.social-btn_github:hover {
-  background: url("../img/carousel/icon-git-colour.png") no-repeat #2b414d;;
-  background-position: 19px 17px;
-  background-size: 15px auto;
-  color: white;
-}
+  &_github:hover {
+    background: url("../img/carousel/icon-git-colour.png") no-repeat #2b414d;;
+    background-position: 19px 17px;
+    background-size: 15px auto;
+    color: white;
+  }
 
-.social-btn_twitter {
-  background: url("../img/carousel/icon-twitter.png") no-repeat #21a7d2;
-  background-position: 19px 17px;
-  background-size: 17px auto;
-  border: #21a7d2 solid 1px;
-}
+  &_twitter {
+    background: url("../img/carousel/icon-twitter.png") no-repeat #21a7d2;
+    background-position: 19px 17px;
+    background-size: 17px auto;
+    border: #21a7d2 solid 1px;
+  }
 
-.social-btn_twitter:hover {
-  background: url("../img/carousel/icon-twitter-colour.png") no-repeat white;
-  background-position: 19px 17px;
-  background-size: 17px auto;
-  color: #21a7d2;
-}
+  &_twitter:hover {
+    background: url("../img/carousel/icon-twitter-colour.png") no-repeat white;
+    background-position: 19px 17px;
+    background-size: 17px auto;
+    color: #21a7d2;
+  }
 
-.social-btn_facebook {
-  background: url("../img/carousel/icon-facebook.png") no-repeat #385899;
-  background-position: 19px 17px;
-  background-size: 9px auto;
-  border: #385899 solid 1px;
-}
+  &_facebook {
+    background: url("../img/carousel/icon-facebook.png") no-repeat #385899;
+    background-position: 19px 17px;
+    background-size: 9px auto;
+    border: #385899 solid 1px;
+  }
 
-.social-btn_facebook:hover {
-  background: url("../img/carousel/icon-facebook-colour.png") no-repeat white;
-  background-position: 19px 17px;
-  background-size: 9px auto;
-  color: #385899;
+  &_facebook:hover {
+    background: url("../img/carousel/icon-facebook-colour.png") no-repeat white;
+    background-position: 19px 17px;
+    background-size: 9px auto;
+    color: #385899;
+  }
 }
-
 .social-item__followers {
   color: #848e97;
   font-size: 0.875em;

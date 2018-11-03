@@ -4,16 +4,13 @@
     padding-top: 2.5rem;
     align-items: flex-start;
     height: 1259px;
+    flex-wrap: nowrap;
+    padding-left: 0;
   }
 
   .feature-item-screen {
     padding-top: 0;
     width: 100%;
-  }
-
-  .features-container {
-    flex-wrap: nowrap;
-    padding-left: 0;
   }
 
   .features-list .feature-item-about-block {
@@ -34,7 +31,6 @@
 
   .features-list {
     width: 90%;
-    //order:/ 2;
   }
 }
 
@@ -44,3 +40,16 @@
   }
 }
 
+@media (max-width: 400px) {
+
+  .section-title-two__heading {
+    font-size: 2rem;
+  }
+
+  .features-list .feature-item {
+    display: block;
+    &-icon-block {
+      width:100%;
+    }
+  }
+}
