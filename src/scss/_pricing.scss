@@ -1,5 +1,4 @@
 .pricing {
-  //width: 100%;
   background: url("../img/peaple_are/Layer_2.png") no-repeat center;
   background-size: cover;
   border: 1px solid red;
@@ -48,15 +47,6 @@
   text-align: center;
   padding-top: 30px;
 }
-//.pricing-block__p {
-//  font-family: Montserrat;
-//  color: #ffffff;
-//  font-size: 60.18px;
-//  font-weight: 100;
-//  line-height: 15px;
-//  text-align: center;
-//  padding-top: 30px;
-//}
 
 .price-plan__price {
   font-family: Montserrat;
@@ -69,6 +59,12 @@
 }
 .price-plan__main-info{
   padding-top: 25px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+  height: 268px;
+
 }
 .price-plan__small-info{
   color:  #ffffff;
@@ -78,15 +74,17 @@
   text-align: center;
   padding-top: 40px;
   text-transform: uppercase;
+
 }
-.price-plan__small-info p:after {
+.price-plan__small-info:after {
   content: '';
   display: block;
   background-color:  #8d81ac;;
   width: 60px;
-  height: 3px;
-  margin: 80px auto;
+  height: 5px;
+  margin: 5px;
   padding-top: 20px;
+  border-radius: 10px;
 }
 .price-plan__description{
   color:  #ffffff;
@@ -102,12 +100,10 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color:  rgba(255, 255, 255, 0.06);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 15px;
   text-align: center;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   padding-top: 50px;
 }
 .price-plan__buy-btn-for {
