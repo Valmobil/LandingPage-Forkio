@@ -42,6 +42,10 @@
 
 @media (max-width: 400px) {
 
+  .features-container {
+    height: 1480px;
+  }
+
   .section-title-two__heading {
     font-size: 2rem;
   }
@@ -49,7 +53,11 @@
   .features-list .feature-item {
     display: block;
     &-icon-block {
-      width:100%;
+      width: 100%;
+    }
+
+    .feature-item-icon-block {
+      padding-bottom: 29px;
     }
   }
 }
