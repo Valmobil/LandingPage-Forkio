@@ -16,7 +16,7 @@
 }
 
 .footer__logo:hover .logo__hover {
-  display: block;
+  display: inline;
 }
 
 .footer__logo:hover .logo__img {
@@ -32,7 +32,7 @@
 }
 .footer__logo:hover .logo__text_size-s {
   color: #333333;
-  line-height: inherit;
+  //line-height: inherit;
   //padding-top: 2px;
   //padding-bottom: 5px;
   //margin-bottom: 2px;
