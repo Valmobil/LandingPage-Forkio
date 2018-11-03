@@ -1,0 +1,46 @@
+//MEDIA
+@media (max-width: 992px) {
+  .carousel-item {
+
+    &__comment {
+      width: 77%;
+    }
+
+    &__time-post {
+      padding-top: 24px;
+      color: #848e97;
+      font-size: 1em;
+      padding-bottom: 4.4rem;
+    }
+  }
+  .fa-angle-left {
+    left: 5%;
+  }
+  .fa-angle-right {
+    left: 95%;
+  }
+  .social-links {
+    flex-wrap: wrap;
+  }
+}
+
+.carousel-item__comment {
+  font-size: 1 rem;
+}
+
+@media (max-width: 480px) {
+
+  .carousel-item__comment {
+    font-size: 1em;
+  }
+  .fa-angle-left {
+    top: 272px;
+  }
+  .fa-angle-right {
+    top: 272px;
+  }
+}
+
+@media (max-width: 400px) {
+
+}
