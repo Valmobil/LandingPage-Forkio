@@ -1,15 +1,10 @@
-.section-features {
-  background: url("../img/features/hereis-editor-screen.png") #f4f4f4 no-repeat;
-  background-position: bottom right;
-  background-size: 50% 80%;
-}
-
 .features-container {
-  height: 37rem;
+  height: 34rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: flex-end;
+  //align-items: flex-end;
+  background-color: #f4f4f4;
   padding-top: 4.5rem;
   padding-left: 3rem;
   padding-bottom: 2rem;
@@ -28,8 +23,10 @@
 .feature-item-screen {
   padding-top: 20px;
   width: 53%;
-  height: 83%;
   order: 3;
+  &__img {
+    width: 100%
+  }
 }
 
 .features-list {
