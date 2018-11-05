@@ -1,9 +1,15 @@
 //MEDIA
 @media (max-width: 992px) {
+
+  .section-features {
+    //700x519 Original IMG size
+    background-size: 100% calc(100vw / 700 * 519);
+  }
+
   .features-container {
     padding-top: 2.5rem;
     align-items: flex-start;
-    height: 1259px;
+    height: calc(70vw + calc(100vw / 700 * 519));
     flex-wrap: nowrap;
     padding-left: 0;
   }
@@ -11,6 +17,8 @@
   .feature-item-screen {
     padding-top: 0;
     width: 100%;
+    height: calc(100vw / 700 * 519 + 30px);
+    height: 50%;
   }
 
   .features-list .feature-item-about-block {
