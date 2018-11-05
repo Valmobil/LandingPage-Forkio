@@ -1,10 +1,15 @@
+.section-features {
+  background: url("../img/features/hereis-editor-screen.png") #f4f4f4 no-repeat;
+  background-position: bottom right;
+  background-size: 50% 90%;
+}
+
 .features-container {
   height: 34rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-end;
-  background-color: #f4f4f4;
   padding-top: 4.5rem;
   padding-left: 3rem;
   padding-bottom: 2rem;
@@ -38,15 +43,15 @@
 
     &-icon-block {
       width: 532px;
-      &__img {
-        display: block;
-        margin: 0 auto;
-      }
+      //&__img {
+      //  display: block;
+      //  margin: 0 auto;
+      //}
     }
     &-about-block {
       padding-bottom: 50px;
       &__title {
-     q2   color: #323232;
+        color: #323232;
         font-size: 1rem;
         font-weight: 500;
         padding-bottom: 0.7rem
