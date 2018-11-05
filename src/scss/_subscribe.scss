@@ -19,12 +19,12 @@
     min-width: 230px;
   }
 
-  .&-form {
+  &-form {
     display: flex;
     flex: 0 1 auto;
     align-items: center;
   }
-  .&-form__input {
+  &-form__input {
     color: #c8cbcf;
     font-size: 14px;
     font-weight: 400;

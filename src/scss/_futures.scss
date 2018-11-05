@@ -1,3 +1,9 @@
+.section-features {
+  background: url("../img/features/hereis-editor-screen.png") #f4f4f4 no-repeat;
+  background-position: bottom right;
+  background-size: 50% 90%;
+}
+
 .features-container {
   height: 34rem;
   display: flex;
@@ -38,22 +44,22 @@
 
     &-icon-block {
       width: 532px;
-      &__img {
-        display: block;
-        margin: 0 auto;
-      }
+      //&__img {
+      //  display: block;
+      //  margin: 0 auto;
+      //}
     }
     &-about-block {
       padding-bottom: 50px;
       &__title {
-     color: #323232;
+        color: #323232;
         font-size: 1rem;
         font-weight: 500;
         padding-bottom: 0.7rem
       }
       &__desc {
         color: #848e97;
-        //font-size: 0.875 rem;
+        font-size: 0.875 rem;
         line-height: 17px;
       }
     }
