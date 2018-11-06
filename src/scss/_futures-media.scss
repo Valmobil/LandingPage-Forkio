@@ -15,6 +15,11 @@
 
   .features-list .feature-item-about-block {
     padding-bottom: 64px;
+
+  }
+
+  .features-list .feature-item-icon-block {
+    width: 530px;
   }
 
   .section-title-two__heading {
@@ -38,13 +43,18 @@
   .features-list {
     padding-left: 20px;
   }
+
+  .features-list .feature-item-icon-block {
+    width: 435px;
+  }
+
+  .features-list .feature-item-icon-block {
+    padding-bottom: 30px;
+  }
+
 }
 
 @media (max-width: 400px) {
-
-  .features-container {
-    height: 1480px;
-  }
 
   .section-title-two__heading {
     font-size: 2rem;
@@ -54,10 +64,6 @@
     display: block;
     &-icon-block {
       width: 100%;
-    }
-
-    .feature-item-icon-block {
-      padding-bottom: 29px;
     }
   }
 }

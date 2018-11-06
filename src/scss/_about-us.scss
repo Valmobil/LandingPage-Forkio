@@ -40,8 +40,6 @@
   }
 }
 
-
-
 .b-download-btn {
   font-family: 'Montserrat', sans-serif;
   margin-right: auto;
@@ -78,10 +76,9 @@
     font-size: 4.5rem;
     margin-top: 140px;
   }
-  &__slogan {
+  .about-us__slogan {
     font-size: 1.5rem;
     flex-wrap: nowrap;
-    width: 100%;
     line-height: 30px;
   }
   .about-us__small-info {
@@ -96,9 +93,6 @@
   }
   .about-us__slogan {
     font-size: 1.25rem;
-    flex-wrap: nowrap;
-    width: 100%;
-    //line-height: 30px;
   }
   .about-us__small-info {
     font-size: 1rem;
@@ -114,11 +108,6 @@
   }
   .about-us__slogan {
     font-size: 1.13rem;
-    flex-wrap: nowrap;
-    width: 100%;
-    //line-height: 21px;
-
-
   }
   .about-us__small-info {
     font-size: 0.88rem;
