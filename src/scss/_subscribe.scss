@@ -15,7 +15,6 @@
     font-size: 30px;
     font-weight: 700;
     width: 233px;
-    //margin-right: 100px;
   }
   &__title:after {
     content: "Order callback";
@@ -23,13 +22,13 @@
   &-form {
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 73%;
   }
 
   &-form-block {
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    width: 83%;
 
     &__input {
       color: #c8cbcf;
@@ -49,9 +48,10 @@
 .btn_subscribe {
   height: 27px;
   //align-self: flex-end;
+  flex-shrink: 0;
   padding-top: 15px;
   text-align: center;
-  min-width: 90px;
+  width: 140px;
   border-radius: 28px;
   border: none;
   background-color: #8d81ac;
@@ -67,11 +67,4 @@
   background-color: #fff;
   color: #8d81ac;
   border: 1px solid #8d81ac;
-}
-
-.btn_subscribe:hover {
-  background-color: #fff;
-  color: #8d81ac;
-  border: 1px solid #8d81ac;
-
 }
