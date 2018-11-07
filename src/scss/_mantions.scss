@@ -1,29 +1,22 @@
-.section-title-three{
-  color: white;
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 38px;
-  padding: 40px;
+.mentions{
+  margin: -2px;
 }
 .section-title-three__heading{
   padding-top: 98px;
   color: #ffffff;
   font-size: 47.99px;
   font-weight: 700;
+  text-align: center;
 }
 .mentions {
   background: url("../img/peaple_are/Layer_1.png") no-repeat center;
   background-size: cover;
-  //border: 1px solid red;
-}
+ }
 .mentions-item__img{
   padding-bottom: 37px;
   margin: 0 auto;
 }
 .mentions ul{
-  margin-top: 40px;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -31,11 +24,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //flex-wrap: wrap;
   flex: 1 1 30%;
-  padding-top: 108px;
+  padding-top: 95px;
   flex-direction: column;
-  //width: 309px;
 }
 .mentions-list p {
   width: 309px;
@@ -48,7 +39,6 @@
   font-style: italic;
   line-height: 24px;
   text-align: center;
-  color: white;
 }
 .mentions-item__text p{
   padding-top: 20px;
@@ -58,16 +48,14 @@
   font-size: 14px;
   font-weight: 400;
   text-align: center;
-  //margin-bottom: 38px;
   padding-top: 119px;
   width: 849px;
-  align-items: center;
+  //align-items: center;
   display: flex;
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  box-sizing: border-box;
-  //width: 100%;
+  //box-sizing: border-box;
 }
 
 .mentions__small-info:after {
@@ -78,5 +66,4 @@
   height: 2px;
   margin: 20px auto;
   border-radius: 10px;
-  //width: 100%;
 }
