@@ -3,11 +3,17 @@
     margin: 0 auto;
     width: 600px;
   }
+  .pricing{
+    height: 1400px;
+  }
 }
 @media (max-width: 768px) {
   .pricing ul {
     margin: 0 auto;
     width: 300px;
+  }
+  .section-title-three-part{
+    margin-bottom: 0;
   }
 }
 
@@ -21,5 +27,8 @@
   .pricing ul{
     justify-content: center;
     width: 300px;
+  }
+  .pricing{
+    height: 2500px;
   }
 }
