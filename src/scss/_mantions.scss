@@ -32,7 +32,7 @@
   width: 309px;
 }
 .mentions-item__text{
-  font-family: Lato;
+  font-family: 'Lato', sans-serif;
   color:  #ffffff;
   font-size: 16px;
   font-weight: 700;
@@ -50,14 +50,11 @@
   text-align: center;
   padding-top: 119px;
   width: 849px;
-  //align-items: center;
   display: flex;
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  //box-sizing: border-box;
 }
-
 .mentions__small-info:after {
   content: '';
   display: block;
