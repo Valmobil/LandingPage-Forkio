@@ -45,16 +45,15 @@
 
     & .feature-item-icon-block {
       width: 435px;
-    }
-
-    & .feature-item-icon-block {
       padding-bottom: 30px;
     }
   }
 }
 
 @media (max-width: 400px) {
-
+  .features-container {
+    height: 1440px;
+  }
   .section-title-two__heading {
     font-size: 2rem;
   }
@@ -65,4 +64,6 @@
       width: 100%;
     }
   }
+
+
 }
