@@ -18,7 +18,7 @@
   justify-content: space-around;
   height: 600px;
 }
-.pricing li{
+.price-plan{
   background-color:  rgba(255, 255, 255, 0.11);
   width: 237px;
   height: 457px;
@@ -26,6 +26,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  transition: 500ms;
 }
 .price-plan__name{
   background-color:  rgba(255, 255, 255, 0.06);
@@ -73,7 +74,7 @@
   background-color: #3a2b3a;
   width: 299px;
   height: 560px;
-  transition: 500ms;
+  transition: 5000ms;
   line-height: normal;
   margin-top: 0;
 }
