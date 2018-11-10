@@ -1,5 +1,5 @@
 1. open terminal window
-2. npn init
+2. npm init
 3. npm isntall gulp --save-dev
 4. npm install pump --save-dev
 4. npm audit fix --force !
